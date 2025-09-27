@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>N O H A</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script scr="https://cdn.tailwindcss.com"></script>
+        <link rel="icon" type="image/png" href="static/logo2.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="static/style.css">
+        <script src="static/snake.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="name">
+            <h1 class="text-3xl font-bold">N&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;H&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A</h1>
+            <h5 class="mt-2 text-gray-600">welcome<br>to the dungeon.</h5>
+            </div>
+            <div class="items">
+            <a href="{{ url_for('home') }}" class="header-button">H¤me</a>
+            <a href="/note" class="header-button">N¤te</a>
+            <a href="#footer" class="header-button">(Anti)s¤cials</a>
+            </div>
+        </header>
+
+        <main>
+        <section class="cards">
+            <div class="card">
+                <a href="https://linktree.com/AREA_52">
+                <img src="static/AREA52.png" alt="AREA 52", width="300"></a>
+                <h2 class="album1">AREA 52</h2>
+                <p>my first album ♡</p>
+            </div>
+            <div>
+                <img src="static/dove.png" alt="bird" width="100">
+            </div>
+            <div class="card">
+                <img src="static/soon.gif" alt="Image 2" width="300">
+                <h2 class="album2">L¤W SCH¤¤L</h2>
+                <p>my next album :') </p>
+            </div>
+        </section>
+        <br><br>
+        <section class="crosswords">
+            <h1 class="clues">MUSE CLUES</h1>
+            <div class="crossword">
+                <p>you're a part of a secret organization and a stranger found out about you and wanted to join</p>
+                <input class="cell1" type="text" value="w" disabled>
+                <input type="text" class="cell1" maxlength="1">
+                <input type="text" class="cell1" maxlength="1">
+                &nbsp;&nbsp;&nbsp;
+                <input type="text" class="cell1" maxlength="1">
+                <input type="text" class="cell1" maxlength="1">
+                <input type="text" class="cell1" maxlength="1">
+                <input class="cell1" type="text" value="d" disabled>
+                &nbsp;&nbsp;&nbsp;
+                <input type="text" class="cell1" maxlength="1">
+                <input type="text" class="cell1" maxlength="1">
+                <input type="text" class="cell1" maxlength="1">
+                &nbsp;&nbsp;&nbsp;
+                <input class="cell1" type="text" value="a" disabled>
+                <input type="text" class="cell1" maxlength="1">
+                <input type="text" class="cell1" maxlength="1">
+                <input type="text" class="cell1" maxlength="1">
+                <input type="text" class="cell1" maxlength="1">
+                &nbsp;&nbsp;&nbsp;
+                <input type="text" class="cell1" maxlength="1">
+                <input class="cell1" type="text" value="s" disabled>
+                <input class="cell1" type="text" value="?" disabled>
+            </div>
+            <div class="answer">
+                <button onclick="checkAnswer1()">submit</button>
+            </div>
+            <div class="crossword">
+                <p>a vital organ doing whatever comes before chewing</p>
+                <input class="cell2" type="text" value="a" disabled>
+                &nbsp;&nbsp;&nbsp;
+                <input type="text" class="cell2" maxlength="1">
+                <input type="text" class="cell2" maxlength="1">
+                <input type="text" class="cell2" maxlength="1">
+                <input type="text" class="cell2" maxlength="1">
+                <input type="text" class="cell2" maxlength="1">
+                &nbsp;&nbsp;&nbsp;
+                <input class="cell2" type="text" value="t" disabled>
+                <input class="cell2" type="text" value="h" disabled>
+                <input class="cell2" type="text" value="a" disabled>
+                <input class="cell2" type="text" value="t" disabled>
+                &nbsp;&nbsp;&nbsp;
+                <input type="text" class="cell2" maxlength="1">
+                <input type="text" class="cell2" maxlength="1">
+                <input type="text" class="cell2" maxlength="1">
+                <input type="text" class="cell2" maxlength="1">
+                <input type="text" class="cell2" maxlength="1">
+            </div>
+            <div class="answer">
+                <button onclick="checkAnswer2()">submit</button>
+            </div>
+            <div class="crossword">
+                <p>an outdoor activity</p>
+                <input type="text" class="cell3" maxlength="1">
+                <input class="cell3" type="text" value="t" disabled>
+                <input type="text" class="cell3" maxlength="1">
+                <input class="cell3" type="text" value="e" disabled>
+                <input type="text" class="cell3" maxlength="1">
+                <input type="text" class="cell3" maxlength="1">
+                <input class="cell3" type="text" value="w" disabled>
+                <input type="text" class="cell3" maxlength="1">
+                <input type="text" class="cell3" maxlength="1">
+                <input class="cell3" type="text" value="k" disabled>
+            </div>
+            <div class="answer">
+                <button onclick="checkAnswer3()">submit</button>
+            </div>
+            <div class="crossword">
+                <p>rhymes with "riddle shove"</p>
+                <input type="text" class="cell4" maxlength="1">
+                <input type="text" class="cell4" maxlength="1">
+                <input class="cell4" type="text" value="t" disabled>
+                <input type="text" class="cell4" maxlength="1">
+                <input type="text" class="cell4" maxlength="1">
+                <input class="cell4" type="text" value="e" disabled>
+                &nbsp;&nbsp;&nbsp;
+                <input type="text" class="cell4" maxlength="1">
+                <input type="text" class="cell4" maxlength="1">
+                <input type="text" class="cell4" maxlength="1">
+                <input class="cell4" type="text" value="e" disabled>
+            </div>
+            <div class="answer">
+                <button onclick="checkAnswer4()">submit</button>
+            </div>
+            <div class="crossword">
+                <p>artificial moons</p>
+                <input type="text" class="cell5" maxlength="1">
+                <input type="text" class="cell5" maxlength="1">
+                <input type="text" class="cell5" maxlength="1">
+                <input type="text" class="cell5" maxlength="1">
+                <input type="text" class="cell5" maxlength="1">
+                <input type="text" class="cell5" maxlength="1">
+                <input type="text" class="cell5" maxlength="1">
+                <input type="text" class="cell5" maxlength="1">
+                <input type="text" class="cell5" maxlength="1">
+                <input class="cell5" type="text" value="s" disabled>
+            </div>
+            <div class="answer">
+                <button onclick="checkAnswer5()">submit</button>
+            </div>
+            <div class="crossword">
+                <p>during what (conventional) period would you go to a cafeteria?</p>
+                <input type="text" class="cell6" maxlength="1">
+                <input type="text" class="cell6" maxlength="1">
+                <input class="cell6" type="text" value="n" disabled>
+                <input type="text" class="cell6" maxlength="1">
+                <input type="text" class="cell6" maxlength="1">
+                &nbsp;&nbsp;&nbsp;
+                <input type="text" class="cell6" maxlength="1">
+                <input type="text" class="cell6" maxlength="1">
+                <input type="text" class="cell6" maxlength="1">
+                <input type="text" class="cell6" type="text" value="a" disabled>
+                <input class="cell6" maxlength="1">
+            </div>
+            <div class="answer">
+                <button onclick="checkAnswer6()">submit</button>
+            </div>
+            <div class="crossword">
+                <p>smelly</p>
+                <input class="cell7" type="text" value="s" disabled>
+                <input class="cell7" type="text" value="t" disabled>
+                <input type="text" class="cell7" maxlength="1">
+                <input type="text" class="cell7" maxlength="1">
+                <input type="text" class="cell7" maxlength="1">
+                <input type="text" class="cell7" maxlength="1">
+            </div>
+            <div class="answer">
+                <button onclick="checkAnswer7()">submit</button>
+            </div>
+            <div class="crossword">
+                <p>a herb used for tea</p>
+                <input type="text" class="cell8" maxlength="1">
+                <input type="text" class="cell8" maxlength="1">
+                <input type="text" class="cell8" maxlength="1">
+                <input type="text" class="cell8" maxlength="1">
+                &nbsp;&nbsp;&nbsp;
+                <input class="cell8" type="text" value="&" disabled>
+                &nbsp;&nbsp;&nbsp;
+                <input class="cell8" type="text" value="f" disabled>
+                <input class="cell8" type="text" value="l" disabled>
+                <input class="cell8" type="text" value="i" disabled>
+                <input class="cell8" type="text" value="o" disabled>
+            </div>
+            <div class="answer">
+                <button onclick="checkAnswer8()">submit</button>
+            </div>
+            <div class="crossword">
+                <p>"prior to getting a college degree" said differently</p>
+                <input type="text" class="cell9" maxlength="1">
+                <input type="text" class="cell9" maxlength="1">
+                <input type="text" class="cell9" maxlength="1">
+                <input type="text" class="cell9" maxlength="1">
+                <input type="text" class="cell9" maxlength="1">
+                <input type="text" class="cell9" maxlength="1">
+                &nbsp;&nbsp;&nbsp;
+                <input class="cell9" type="text" value="i" disabled>
+                &nbsp;&nbsp;&nbsp;
+                <input type="text" class="cell9" maxlength="1">
+                <input type="text" class="cell9" maxlength="1">
+                <input type="text" class="cell9" maxlength="1">
+                <input type="text" class="cell9" maxlength="1">
+                <input type="text" class="cell9" maxlength="1">
+                <input type="text" class="cell9" maxlength="1">
+                <input type="text" class="cell9" maxlength="1">
+                <input class="cell9" type="text" value="e" disabled>
+            </div>
+            <div class="answer">
+                <button onclick="checkAnswer9()">submit</button>
+            </div>
+            <div class="crossword">
+                <p>final destination after a long day</p>
+                <input class="cell0" type="text" value="b" disabled>
+                <input type="text" class="cell0" maxlength="1">
+                <input type="text" class="cell0" maxlength="1">
+                <input type="text" class="cell0" maxlength="1">
+                &nbsp;&nbsp;&nbsp;
+                <input type="text" class="cell0" maxlength="1">
+                <input type="text" class="cell0" maxlength="1">
+                <input type="text" class="cell0" maxlength="1">
+                <input class="cell0" type="text" value="e" disabled>
+            </div>
+            <div class="answer">
+                <button onclick="checkAnswer10()">submit</button>
+            </div>
+        </section>
+        </main>
+        <footer id="footer">
+            <p><span class="inc">© 2025 SELENOPHILE INC.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <span class="inc">noha.inquiries@outlook.com</span></p>
+            <div class='socials'>
+                <a href="http://instagram.com/spaceegg13" target="_blank">
+                    <img src="static/insta.png" width="20">
+                </a>
+                <a href="https://www.youtube.com/@selenophileinc" target="_blank">
+                    <img src="static/youtube.png" width="55">
+                </a>
+            </div>
+        </footer>
+        
+    </body>
+</html>
