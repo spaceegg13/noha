@@ -122,9 +122,9 @@ function checkAnswer7() {
   const inputs = document.querySelectorAll(".cell7");
   let answer7 = "";
   inputs.forEach(inp => answer7 += inp.value.toLowerCase());
-  if (answer7.length < 6) {
+  if (answer7.length < 10) {
     alert("keep going, not all letters are filled");
-  } else if (answer7 === "stinky") {
+  } else if (answer7 === "jamsession") {
     correctAnswers[7] = true
     const allCorrect = Object.values(correctAnswers).every(v => v === true);
     if (allCorrect){
@@ -189,4 +189,5 @@ function checkAnswer10() {
   } else {
     alert("try again :)");
   }
+
 }
